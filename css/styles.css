@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+    margin: 0;
+    font-family: "CustomFont";
+    background-color: rgba(12, 12, 44, 0.904);
+    font-family: 'Orbitron', sans-serif;
+}
+
+.player {
+    position: absolute;
+    width: 30px;
+    height: 17vh;
+    top: 40%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fff, 0 0 20px #F5E6FF, 0 0 30px #9800FF;
+}
+
+#player1 {
+    background-color: #F5E6FF;
+    left: 0;
+    margin-left: 80px;
+}
+
+#player2 {
+    background-color: #F5E6FF;
+    right: 0;
+    margin-right: 80px;
+    transition: 0.2s;
+}
+
+#ball {
+    position: absolute;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgb(252, 156, 118);
+    box-shadow: 0 0 10px rgb(252, 156, 118), 0 0 20px rgb(252, 156, 118), 0 0 30px rgba(252, 156, 118, 0.8);
+}
+
+#walltop {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(87, 42, 129);
+}
+
+#wallbottom {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(87, 42, 129);
+}
+
+#wallleft {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    width: 25px;
+    height: 100%;
+    background-color: rgb(87, 42, 129);
+}
+
+#wallright {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    width: 25px;
+    height: 100%;
+    background-color: rgb(87, 42, 129);
+}
+
+#goalright {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 100%;
+    background-color: rgba(141, 53, 53, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#goalleft {
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: rgba(141, 53, 53, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#points-container {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    left: 0;
+    right: 0;
+    top: 30px;
+    margin: auto;
+    font-size: 40px;
+    color: blue;
+    text-shadow: 0 0 10px blue, 0 0 20px blue, 0 0 30px blue;
+    text-align: center;
+}
+
+#menu-container {
+    z-index: 2;
+    position: absolute;
+    width: 40vw;
+    height: 40vh;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgb(126, 86, 167);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+#menu-container:hover {
+    transform: scale(1.05);
+}
+
+#menu-container h1 {
+    font-size: 60px;
+    color: rgb(25, 25, 90);
+    text-shadow: 0 0 10px rgb(25, 25, 90), 0 0 20px rgb(25, 25, 90), 0 0 30px rgb(25, 25, 90);
+}
+
+#menu-container p {
+    margin-top: -30px;
+    font-size: 2vw;
+}
+
+#menu-container button {
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 3px 10px;
+    background-color: rgb(101, 68, 134);
+}
